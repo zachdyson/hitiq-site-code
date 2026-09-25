@@ -376,7 +376,7 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--navbar-height); -webki
 .c2 .rc.is-static .rc_step { opacity: 1; min-height: 0; }
 .c2 .rc.is-static .rc_media { position: relative; top: auto; }
 .c2 .figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); margin-top: 8px; }
-.c2 .figure { display: flex; flex-direction: column; gap: 8px; padding: 32px 0 36px; border-top: 1px solid var(--color-line); }
+.c2 .figure_item { display: flex; flex-direction: column; gap: 8px; padding: 32px 0 36px; border-top: 1px solid var(--color-line); }
 .c2 .figure_value { color: var(--color-white); font-weight: 800; line-height: 0.95; letter-spacing: -0.04em; font-size: clamp(4rem, 2.5rem + 6.5vw, 8.5rem); font-variant-numeric: tabular-nums; }
 .c2 .figure_label { color: var(--color-white); font-size: var(--text-large); font-weight: 700; }
 .c2 .figure_note { display: inline-flex; align-items: center; gap: 8px; color: var(--color-grey); font-size: var(--text-small); }
@@ -861,7 +861,7 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--navbar-height); -webki
 .c2 .shop_retail-logos li + li { padding-left: 20px; }
 .c2 .shop_retail-logos img { height: 28px; }
 .c2 .figures { grid-template-columns: minmax(0, 1fr); gap: 0; }
-.c2 .figure { padding: 24px 0; }
+.c2 .figure_item { padding: 24px 0; }
 .c2 .reviews_meta, .c2 .community_meta { justify-content: flex-start; padding-top: 0; }
 .c2 .rail.is-community .rail_card { width: 46vw; }
 .c2 .rc { grid-template-columns: 0 minmax(0, 1fr); column-gap: 0; }
