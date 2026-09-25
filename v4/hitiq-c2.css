@@ -669,6 +669,9 @@ html { scroll-behavior: smooth; scroll-padding-top: var(--navbar-height); -webki
 .c2 .evidence_partners { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px 40px; margin-top: var(--stack-large); }
 .c2 .evidence_partners-title { color: var(--color-white); font-size: var(--text-large); font-weight: 700; line-height: 1; }
 .c2 .evidence_logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px clamp(2rem, 5vw, 4.5rem); }
+.c2 .evidence_logos img { display: block; width: auto; height: 42px; }
+.c2 .evidence_logos li:nth-child(1) img { height: 39px; }
+.c2 .evidence_logos li:nth-child(3) img { height: 54px; }
 .c2 .evidence_footnote { max-width: 62em; margin: 28px auto 0; text-align: center; opacity: 0.7; }
 .c2 .rail { --rail-inset: max(var(--page-padding), calc((100vw - var(--container-max)) / 2 + var(--page-padding))); }
 .c2 .rail_track {
