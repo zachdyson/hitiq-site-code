@@ -331,3 +331,4 @@ ol { margin: 0; padding: 0; list-style: none; }
 .stockists_input, .qty_input { height: auto; margin-bottom: 0; }
 @media (max-width: 767px) { .w-form form { flex-direction: column; } .stockists_search form, .qty form { flex-direction: row; } }
 .footer_form-success { display: none; }   /* Webflow's own .w-form-done is the success state; publish drops [hidden] */
+blockquote { margin: 0; padding: 0; border: 0; }   /* Webflow normalize gives blockquotes padding + a 5px left border */
