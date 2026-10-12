@@ -140,12 +140,12 @@ a { color: inherit; text-decoration: none; }
 .stack_card:nth-child(2) { --stack-i: 1; }
 .stack_card:nth-child(3) { --stack-i: 2; }
 .stack_card:nth-child(4) { --stack-i: 3; }
-.stack_media { position: relative; flex: 1 1 0; min-width: 0; aspect-ratio: 672 / 403; border-radius: 20px; overflow: hidden; background: var(--color-elite-blue-deep); container-type: inline-size; }
+.stack_media { container-type: inline-size; }
 .gd-widget { --gd: 1cqw; }
-.gd-widget { position: absolute; display: flex; flex-direction: column; gap: calc(1.4 * var(--gd)); padding: calc(2.6 * var(--gd)) calc(2.8 * var(--gd)); border-radius: calc(2.6 * var(--gd)); border: 1px solid rgba(255, 255, 255, 0.14); background: rgba(30, 38, 46, 0.72); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); color: var(--color-white); font-family: var(--font-body); line-height: 1.2; box-shadow: 0 calc(2 * var(--gd)) calc(5 * var(--gd)) -calc(2 * var(--gd)) rgba(0, 0, 0, 0.45); }
+.gd-widget { box-shadow: 0 calc(2 * var(--gd)) calc(5 * var(--gd)) -calc(2 * var(--gd)) rgba(0, 0, 0, 0.45); }
 .gd-toggle.is-on .gd-toggle_knob { transform: translateX(calc(2.8 * var(--gd))); }
 .gd-widget.is-off .gd-body { opacity: 0.35; }
-.gd-rec_ping { position: absolute; inset: -calc(0.3 * var(--gd)); border-radius: 50%; border: calc(0.25 * var(--gd)) solid #7fded6; opacity: 0; animation: gd-rec-ping 1.6s ease-out infinite; }
+.gd-rec_ping { inset: -calc(0.3 * var(--gd)); }
 .gd-gauge_needle line { stroke: var(--color-white); stroke-width: 3.5; stroke-linecap: round; }
 .gd-widget.is-gauge .gd-muted { text-align: center; margin-top: calc(1.2 * var(--gd)); }
 .gd-widget.is-static .gd-rec_ping, .gd-widget.is-static .gd-rec_dot { animation: none; }
@@ -157,7 +157,7 @@ a { color: inherit; text-decoration: none; }
 .ticker.is-static .ticker_track.is-clone { display: none; }
 .sport-card_icon img { display: block; width: 100%; height: 100%; }
 .hscroll { --hscroll-peek: 160px; }
-.hscroll_backdrop { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; z-index: 0; background: url("../assets/img/rc-backdrop.jpg") center / cover no-repeat; will-change: transform; pointer-events: none; }
+.hscroll_backdrop { background: url("../assets/img/rc-backdrop.jpg") center / cover no-repeat; }
 .hscroll_panel:last-child { width: 100%; }
 .hscroll_panel:not(.is-active) .hscroll_pill { background: transparent; color: var(--color-slate); }
 .hscroll_panel:not(.is-active) .hscroll_title { color: var(--color-slate); }
