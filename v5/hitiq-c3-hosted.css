@@ -517,6 +517,23 @@ ol { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 767px) { .w-form form { flex-direction: column; } .stockists_search form, .qty form { flex-direction: row; } }
 .footer_form-success { display: none; }   /* Webflow's own .w-form-done is the success state; publish drops [hidden] */
 blockquote { margin: 0; padding: 0; border: 0; }   /* Webflow normalize gives blockquotes padding + a 5px left border */
+/* ---- Old-site tag styles neutraliser (2026-11-06). The live project still carries the previous site's Designer tag styles
+   (All H1–H6 Headings in navy, All Paragraphs at opacity .8 / weight 300, lists, blockquotes, strong…). They cannot be removed by
+   the API, so this block restores the browser/Webflow defaults the concept was designed against until Zach resets them in the
+   Designer (Style Manager → tag styles). Same specificity, loaded later → wins. ---- */
+h1, h2, h3, h4, h5, h6 { color: inherit; font-weight: 700; margin: 0; }
+h1 { font-size: 38px; line-height: 44px; }
+h2 { font-size: 32px; line-height: 36px; }
+h3 { font-size: 24px; line-height: 30px; }
+h4 { font-size: 18px; line-height: 24px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 18px; }
+p { opacity: 1; font-weight: inherit; font-size: inherit; line-height: inherit; margin: 0; }
+ul, ol { font-size: inherit; font-weight: inherit; }
+li { font-size: inherit; line-height: inherit; margin: 0; padding: 0; }
+strong, b { color: inherit; font-weight: 700; }
+blockquote { color: inherit; background: transparent; border: 0; border-radius: 0; margin: 0; padding: 0; font-size: inherit; font-weight: inherit; line-height: inherit; }
+a { color: inherit; }
 /* runtime-only classes (no element in the exported markup) */
 .text-color-cyan { color: var(--color-cyan); }
 .text-color-green { color: var(--color-confidence-green); }
