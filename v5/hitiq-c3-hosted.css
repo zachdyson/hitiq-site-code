@@ -534,6 +534,10 @@ li { font-size: inherit; line-height: inherit; margin: 0; padding: 0; }
 strong, b { color: inherit; font-weight: 700; }
 blockquote { color: inherit; background: transparent; border: 0; border-radius: 0; margin: 0; padding: 0; font-size: inherit; font-weight: inherit; line-height: inherit; }
 a { color: inherit; }
+/* ---- Storesynk cart states (Webflow only; js/cart-demo.js does this on Vercel) ---- */
+.cart_empty:not(.sf-cart-empty) { display: none; }          /* Storesynk adds .sf-cart-empty to cart children when the bag is empty */
+.cart_summary.sf-cart-empty, .cart-count.sf-cart-empty, .cart_title-count.sf-cart-empty { display: none; }
+.cart-item.sf-loading { opacity: .6; }
 /* runtime-only classes (no element in the exported markup) */
 .text-color-cyan { color: var(--color-cyan); }
 .text-color-green { color: var(--color-confidence-green); }
