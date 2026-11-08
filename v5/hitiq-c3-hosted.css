@@ -530,7 +530,7 @@ html.is-menu-open { overflow: hidden; }
 .quote-banner_badge img { width: 42px; height: 42px; }
 .quote-banner_badge.is-large img { width: 46px; height: 46px; }
 .section_includes .eyebrow { font-size: 12px; letter-spacing: 0.08em; }
-.includes_table { --includes-gap: 8px; --includes-bleed: 6px; --includes-col: 56px; }
+.includes_table, .includes_card { --includes-gap: 8px; --includes-bleed: 6px; --includes-col: 56px; }
 .includes_row:last-child { padding-bottom: 24px; }
 .includes_icon svg { width: 24px; height: 24px; }
 .section_hero.has-mobile-film .hero-film_bg { width: auto; margin: 0; aspect-ratio: auto; max-height: none; }
