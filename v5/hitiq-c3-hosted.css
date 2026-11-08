@@ -957,7 +957,12 @@ textarea.field_input { min-height: 120px; resize: vertical; }
 .purpose .hq-heading { color: var(--color-elite-blue); }
 .purpose .hq-lead { color: rgba(21, 36, 61, 0.78); }
 .techq_media img { width: 100%; height: auto; display: block; }
+.hitiq-page .steps { display: flex; flex-direction: column; width: 100%; }
+.hitiq-page .step { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; padding: 18px 0; border-top: 1px solid var(--color-line); }
 .step:last-child { border-bottom: 1px solid var(--color-line); }
+.hitiq-page .step_num { width: 36px; height: 36px; padding: 0; line-height: 1; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: var(--color-hitiq-blue); background: var(--color-white); }
+.hitiq-page .step_title { font-size: 20px; font-weight: 700; line-height: 1.25; color: var(--color-white); }
+.hitiq-page .step_desc { margin-top: 4px; font-size: var(--text-regular); line-height: 1.5; color: var(--color-mist); }
 .story_media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
 .story_media::after { content: ""; position: absolute; inset: auto 0 0 0; height: 40%; background: linear-gradient(180deg, rgba(7, 26, 41, 0) 0%, rgba(7, 26, 41, 0.6) 100%); pointer-events: none; }
 .range_card:focus-visible { outline: 2px solid var(--color-cyan); outline-offset: 3px; }
@@ -965,6 +970,7 @@ textarea.field_input { min-height: 120px; resize: vertical; }
 .range_card:hover .range_media img { transform: scale(1.04); }
 .range_action .menu_arrow { width: 16px; height: 16px; }
 .range_card:hover .range_action .menu_arrow { transform: translateX(3px); }
+.hitiq-page .partner_logo { height: 44px; width: auto; }
 html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .hq-section.is-light .tech_sub { color: var(--color-hitiq-blue); }
 .steps.is-chain .step { position: relative; padding: 18px 0; border-top: 1px solid var(--color-line); }
@@ -1024,7 +1030,9 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 }
 @media (max-width: 767px) {
 .showcase_tabs::-webkit-scrollbar { display: none; }
+.hitiq-page .filter-pill { flex: none; }
 .showcase_view img { border-radius: 10px; }
+.hitiq-page .step { grid-template-columns: minmax(0, 1fr); gap: 6px; }
 .range_grid::-webkit-scrollbar { display: none; }
 .range_grid.is-two .range_card { flex: none; }
 .partner .link-arrow { grid-column: 1; }
