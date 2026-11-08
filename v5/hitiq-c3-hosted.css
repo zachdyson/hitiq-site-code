@@ -548,7 +548,7 @@ html.is-menu-open { overflow: hidden; }
    The builder wraps <form> in a .w-form block and gives inputs/buttons Webflow's .w-input/.w-button defaults. */
 ol { margin: 0; padding: 0; list-style: none; }
 .w-form { margin: 0; }
-.w-form form { display: flex; gap: 8px; }
+.footer_form form { display: flex; gap: 8px; }   /* footer newsletter only — the enquiry forms (.form-card) keep their block flow (2026-11-09: this used to hit every form and put the enquiry grid beside its button) */
 .footer_input { height: auto; margin-bottom: 0; }
 .w-form-done, .w-form-fail { margin-top: 12px; padding: 0; background: none; text-align: left; font-size: var(--text-small); line-height: 1.5; }
 .w-form-done { color: var(--color-confidence-green); }
@@ -557,8 +557,9 @@ ol { margin: 0; padding: 0; list-style: none; }
 .stockists_search form { display: flex; align-items: center; gap: 12px; flex: 1 1 auto; }
 .qty form { display: inline-flex; align-items: center; }
 .stockists_input, .qty_input { height: auto; margin-bottom: 0; }
-@media (max-width: 767px) { .w-form form { flex-direction: column; } .stockists_search form, .qty form { flex-direction: row; } }
+@media (max-width: 767px) { .footer_form form { flex-direction: column; } }
 .footer_form-success { display: none; }   /* Webflow's own .w-form-done is the success state; publish drops [hidden] */
+.form-success:not(.is-shown) { display: none; }   /* enquiry success block: publish drops [hidden]; js/enquiry.js adds .is-shown once Webflow has accepted the submission */
 blockquote { margin: 0; padding: 0; border: 0; }   /* Webflow normalize gives blockquotes padding + a 5px left border */
 /* ---- Old-site tag styles neutraliser (2026-11-06). The live project still carries the previous site's Designer tag styles
    (All H1–H6 Headings in navy, All Paragraphs at opacity .8 / weight 300, lists, blockquotes, strong…). They cannot be removed by
