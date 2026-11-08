@@ -216,7 +216,7 @@ a { color: inherit; text-decoration: none; }
 .care-note_text:first-child { padding-top: 24px; border-top: 1px solid rgba(7, 49, 80, 0.12); }
 .care-note_text + .care-note_text { margin-top: 12px; }
 .hscroll { --hscroll-peek: 160px; }
-.hscroll_backdrop { background: url("../assets/img/rc-backdrop.jpg") center / cover no-repeat; }
+.hscroll_backdrop { background: url("assets/img/rc-backdrop.jpg") center / cover no-repeat; }
 .hscroll_panel:last-child { width: 100%; }
 .hscroll_panel:not(.is-active) .hscroll_pill { background: transparent; color: var(--color-slate); }
 .hscroll_panel:not(.is-active) .hscroll_title { color: var(--color-slate); }
