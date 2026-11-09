@@ -1047,6 +1047,8 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .article_grid .article_summary { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 0 0 auto; }
 .article_grid .article_summary:empty { display: none; }
 .article_grid .article_body .link-arrow { margin-top: auto; padding-top: 6px; }
+.article_grid > .w-dyn-item { display: flex; }
+.article_grid > .w-dyn-item > .article { width: 100%; }
 @media (max-width: 991px) {
 .flow .system_link { height: 64px; }
 .system_node svg { transform: rotate(90deg); }
