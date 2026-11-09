@@ -16,12 +16,15 @@
 .stockists_map.is-unavailable { display: grid; place-items: center; padding: 24px; font-size: 14px; color: var(--color-slate); text-align: center; }
 .brand-hero_media.is-arch { border-radius: 999px 999px 28px 28px; }
 .article.is-hidden { display: none; }
+.library_empty.is-shown { display: block; }
+.library_more.is-shown { display: flex; }
 .pdp_cta.sf-loading { pointer-events: none; opacity: 0.75; }
 .cart.sf-cart-opened { visibility: visible; pointer-events: auto; }
 .pdp_option-btn.sf-option-unavailable { opacity: 0.45; text-decoration: line-through; }
 .pdp_option-btn.sf-out-of-stock { opacity: 0.45; text-decoration: line-through; }
 .link-arrow.is-disabled { color: rgba(227, 227, 227, 0.4); pointer-events: none; }
 .share_btn.is-done { background: var(--color-confidence-green); border-color: var(--color-confidence-green); color: var(--color-elite-blue); }
+.doc_toc.is-empty { display: none; }
 @media (max-width: 991px) {
 .brand-hero_media.is-arch { border-radius: 24px; }
 }
@@ -582,6 +585,9 @@ a { color: inherit; }
 .cart_empty:not(.sf-cart-empty) { display: none; }          /* Storesynk adds .sf-cart-empty to cart children when the bag is empty */
 .cart_summary.sf-cart-empty, .cart-count.sf-cart-empty, .cart_title-count.sf-cart-empty { display: none; }
 .cart-item.sf-loading { opacity: .6; }
+/* 2026-11-09 — article TOC states the builder cannot hold (runtime combos no element carries in the markup) */
+.doc_toc-link.is-current { border-left-color: var(--color-confidence-green); color: var(--color-hitiq-blue); font-weight: 600; }
+.doc_toc-link.is-sub { padding-left: 28px; font-size: 13px; }
 /* runtime-only classes (no element in the exported markup) */
 .text-color-cyan { color: var(--color-cyan); }
 .text-color-green { color: var(--color-confidence-green); }
@@ -1015,15 +1021,29 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .article_grid.is-on-navy .article_media { background: var(--color-elite-blue-deep); }
 .article_grid.is-on-navy .link-arrow.is-navy { color: var(--color-white); }
 .article_hero img { display: block; width: 100%; height: auto; }
-.rich.is-article > p:first-child { font-size: var(--text-lead); line-height: 1.6; color: var(--color-hitiq-blue); }
 .rich blockquote { margin: 28px 0; padding: 20px 24px; border-left: 3px solid var(--color-confidence-green); border-radius: 0 16px 16px 0; background: var(--color-white); }
 .rich blockquote p { margin: 0 0 10px; font-size: var(--text-lead); font-style: italic; line-height: 1.5; color: var(--color-hitiq-blue); }
 .rich blockquote cite { font-size: 13px; font-style: normal; font-weight: 600; color: var(--color-slate); }
 .share_btn:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: 2px; }
+.doc-hero_back svg { width: 16px; height: 16px; }
+.doc-hero .eyebrow .doc-hero_crumb:hover { color: var(--color-white); }
+.rich h2:not(:first-child) { margin-top: clamp(28px, 3vw, 40px); }
+.rich h4 { margin: 20px 0 6px; font-size: 16px; font-weight: 700; line-height: 1.35; color: var(--color-hitiq-blue); }
+.rich figure { margin: 28px 0; }
+.rich figure img, .rich img { display: block; max-width: 100%; height: auto; border-radius: 16px; }
+.rich figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5; color: var(--color-slate); }
+.rich iframe { max-width: 100%; border: 0; border-radius: 16px; }
+.rich .w-embed, .rich .w-video { margin: 28px 0; }
+.rich hr { margin: 32px 0; border: 0; border-top: 1px solid var(--color-grey-5); }
+.rich em { font-style: italic; }
+.library_input::placeholder { color: var(--color-slate); }
+.library_input:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: 2px; }
+.library_sort-btn:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: 2px; }
 @media (max-width: 991px) {
 .flow .system_link { height: 64px; }
 .system_node svg { transform: rotate(90deg); }
 .partner .link-arrow { grid-column: 2; }
+.doc_grid.is-article .doc_toc { display: none; }
 .blog_featured .article.is-featured { grid-template-columns: minmax(0, 1fr); }
 .blog_featured .article.is-featured .article_media { height: auto; }
 .doc_grid.is-article .doc_aside { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
