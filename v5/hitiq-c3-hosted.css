@@ -1049,6 +1049,7 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .article_grid .article_body .link-arrow { margin-top: auto; padding-top: 6px; }
 .article_grid > .w-dyn-item { display: flex; }
 .article_grid > .w-dyn-item > .article { width: 100%; }
+.article_grid > .w-dyn-item.is-hidden { display: none; }
 @media (max-width: 991px) {
 .flow .system_link { height: 64px; }
 .system_node svg { transform: rotate(90deg); }
