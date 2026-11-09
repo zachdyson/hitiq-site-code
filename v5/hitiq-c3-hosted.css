@@ -16,6 +16,7 @@
 .stockists_map.is-unavailable { display: grid; place-items: center; padding: 24px; font-size: 14px; color: var(--color-slate); text-align: center; }
 .brand-hero_media.is-arch { border-radius: 999px 999px 28px 28px; }
 .article.is-hidden { display: none; }
+.library_reset.is-shown { display: inline; }
 .library_empty.is-shown { display: block; }
 .library_more.is-shown { display: flex; }
 .pdp_cta.sf-loading { pointer-events: none; opacity: 0.75; }
@@ -1037,9 +1038,15 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .rich .w-embed, .rich .w-video { margin: 28px 0; }
 .rich hr { margin: 32px 0; border: 0; border-top: 1px solid var(--color-grey-5); }
 .rich em { font-style: italic; }
+.library_bar form { display: flex; align-items: center; gap: 10px; flex: 1 1 auto; min-width: 0; }
 .library_input::placeholder { color: var(--color-slate); }
 .library_input:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: 2px; }
+.library_input::-webkit-search-cancel-button { -webkit-appearance: none; }
 .library_sort-btn:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: 2px; }
+.article_grid .article_title { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.article_grid .article_summary { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 0 0 auto; }
+.article_grid .article_summary:empty { display: none; }
+.article_grid .article_body .link-arrow { margin-top: auto; padding-top: 6px; }
 @media (max-width: 991px) {
 .flow .system_link { height: 64px; }
 .system_node svg { transform: rotate(90deg); }
@@ -1057,6 +1064,9 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .range_grid::-webkit-scrollbar { display: none; }
 .range_grid.is-two .range_card { flex: none; }
 .partner .link-arrow { grid-column: 1; }
+.library_bar form { flex-wrap: wrap; }
+.library_filters::-webkit-scrollbar { display: none; }
+.library_filters .filter-pill { flex: none; }
 }
 @media (prefers-reduced-motion: reduce) {
 .system_pulse { animation: none; left: 50%; opacity: 1; }
