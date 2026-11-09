@@ -1015,6 +1015,7 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .blog_featured .article.is-featured .article_media { aspect-ratio: 16 / 10; height: 100%; }
 .blog_featured .article.is-featured .article_body { padding: clamp(24px, 3vw, 44px); }
 .blog_featured .article.is-featured .article_title { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem); line-height: 1.15; letter-spacing: -0.02em; }
+.article_grid > .is-hidden { display: none; }
 .article_grid.is-on-navy .article { background: var(--color-elite-blue); border-color: var(--color-line); color: var(--color-white); }
 .article_grid.is-on-navy .article_tag { color: var(--color-white); }
 .article_grid.is-on-navy .article_date, .article_grid.is-on-navy .article_summary { color: var(--color-mist); }
