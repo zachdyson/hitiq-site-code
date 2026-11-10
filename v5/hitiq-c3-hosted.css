@@ -325,6 +325,7 @@ a { color: inherit; text-decoration: none; }
 .ticker.is-partners .ticker_fade.is-right { background: linear-gradient(270deg, var(--color-white), rgba(255, 255, 255, 0)); }
 .partner_logo img { display: block; width: auto; max-width: none; height: var(--logo-h, 40px); object-fit: contain; }
 .partner_logo.is-rebel { --logo-h: 44px; }
+.partner_logo.is-rebel img, .fit-card_retailer img, .pdp_retail img { border-radius: 4px; }
 .partner_logo.is-chemist { --logo-h: 68px; }
 .partner_logo.is-amazon { --logo-h: 40px; }
 .partner_logo.is-shock { --logo-h: 80px; }
