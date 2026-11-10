@@ -193,7 +193,7 @@ a { color: inherit; text-decoration: none; }
 .tech_cover::-webkit-details-marker { display: none; }
 .tech_cover::marker { content: ""; }
 .tech_cover:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: -4px; border-radius: 32px; }
-.tech_cover::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 29.45%; background: linear-gradient(0deg, #d5e7f7 0%, #c4e1f6 18.4%, #b6d8f6 55.7%, #a6cef5 100%); }
+.tech_cover::before { display: none; }
 .tech_cover:hover .tech_action { background: var(--color-elite-blue); border-color: var(--color-elite-blue); }
 .tech_cover:active .tech_action { transform: scale(0.985); }
 .tech[open] .tech_action { background: var(--color-digital-blue); border-color: var(--color-hitiq-blue); color: var(--color-hitiq-blue); }
@@ -504,7 +504,6 @@ html { scroll-behavior: auto; }
 :root { --page-padding: 20px; --navbar-top: 16px; --navbar-height: 73px; }
 html.is-menu-open { overflow: hidden; }
 .section_essentials .eyebrow { font-size: 12px; letter-spacing: 0.08em; }
-.tech_cover::before { display: none; }
 .care-note_text:first-child { padding-top: 16px; }
 .section_results .eyebrow { font-size: 12px; letter-spacing: 0.08em; }
 .hscroll_panel:last-child { width: 342px; }
