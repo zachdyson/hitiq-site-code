@@ -308,7 +308,8 @@ a { color: inherit; text-decoration: none; }
 .hub-card .hub-card_arrow .fit-card_arrow { transform: none !important; margin: 0; }
 .gallery_caption strong { font-weight: 600; }
 .gallery_caption span { font-size: 13px; color: var(--color-slate); }
-.gallery_controls .button-icon { width: 36px; height: 36px; }
+.gallery_controls .button-icon { flex: none; width: 36px; height: 36px; }
+.gallery_thumbs::-webkit-scrollbar { display: none; }
 .gallery_thumb img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 5px; }
 .gallery_thumb:focus-visible { outline: 2px solid var(--color-hitiq-blue); outline-offset: 2px; }
 .fit-choice_button span { display: block; margin-bottom: 4px; font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-green-active); }
@@ -516,7 +517,7 @@ html.is-menu-open { overflow: hidden; }
 .callout_label strong { font-size: 15px; }
 .filter-row::-webkit-scrollbar { display: none; }
 .fit-card_retailer img { height: 24px; }
-.gallery_controls .button-icon { width: 36px; height: 36px; }
+.gallery_controls .button-icon { flex: none; width: 36px; height: 36px; }
 .purchase-modal_partner img { width: 80px; height: 80px; }
 .ticker { --ticker-gap: 16px; --ticker-duration: 26s; }
 .ticker.is-logos { --ticker-gap: 28px; --ticker-duration: 34s; }
