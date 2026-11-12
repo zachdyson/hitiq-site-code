@@ -1110,6 +1110,7 @@ section.hq-section.cortex-hardware-brief { padding-top: 64px; padding-bottom: 64
 .cortex-network-hub span { font-size: 12px; color: var(--color-mist); }
 .purpose.is-statement .guardian-payoff { font-size: clamp(36px, 5.2vw, 78px); line-height: 1.07; letter-spacing: -0.045em; max-width: 24ch; margin: 0; }
 .purpose.is-statement .hq-lead { max-width: 820px; font-size: clamp(17px, 1.4vw, 22px); line-height: 1.55; }
+.guardian-context-copy .eyebrow { color: var(--color-cyan); }
 .guardian-context-copy h3 { font-size: clamp(27px, 3vw, 40px); line-height: 1.12; letter-spacing: -0.03em; color: var(--color-white); margin: 14px 0 20px; font-weight: 800; }
 .guardian-context-copy h3 span { color: var(--color-lavender); }
 .guardian-context-copy > p:not(.eyebrow) { font-size: 17px; line-height: 1.6; color: #c4d0e0; max-width: 440px; }
