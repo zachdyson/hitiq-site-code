@@ -14,12 +14,12 @@
 .review-card_quote.is-summary { font-style: italic; color: var(--color-slate); }
 .review-card_quote.is-italic { font-style: italic; }
 .stockists_map.is-unavailable { display: grid; place-items: center; padding: 24px; font-size: 14px; color: var(--color-slate); text-align: center; }
+.doc_toc.is-empty { display: none; }
 .brand-hero_media.is-arch { border-radius: 999px 999px 28px 28px; }
 .article.is-hidden { display: none; }
 .library_reset.is-shown { display: inline; }
 .library_empty.is-shown { display: block; }
 .library_more.is-shown { display: flex; }
-.doc_toc.is-empty { display: none; }
 .pdp_cta.sf-loading { pointer-events: none; opacity: 0.75; }
 .cart.sf-cart-opened { visibility: visible; pointer-events: auto; }
 .pdp_option-btn.sf-option-unavailable { opacity: 0.45; text-decoration: line-through; }
@@ -1126,6 +1126,10 @@ section.hq-section.cortex-hardware-brief { padding-top: 64px; padding-bottom: 64
 .guardian-lightbox button:hover { background: #24406a; }
 .guardian-lightbox button:focus-visible { outline: 2px solid var(--color-cyan); outline-offset: 2px; }
 .guardian-lightbox img { display: block; width: 100%; height: auto; max-height: calc(94dvh - 150px); object-fit: contain; background: #081321; touch-action: pan-y; }
+.doc_table th, .doc_table td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--color-line-dark); }
+.doc_table th { background: rgba(7, 49, 80, 0.06); color: var(--color-hitiq-blue); font-weight: 700; }
+.doc_table tr:last-child td { border-bottom: 0; }
+.doc_figure img { border: 1px solid var(--color-line-dark); }
 @media (max-width: 991px) {
 .flow .system_link { height: 64px; }
 .system_node svg { transform: rotate(90deg); }
