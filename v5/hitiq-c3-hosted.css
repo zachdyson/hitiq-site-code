@@ -1037,6 +1037,10 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .rich h3, .rich .doc_h3 { margin: 24px 0 8px; font-size: 18px; font-weight: 700; line-height: 1.3; }
 .rich p { margin: 0 0 14px; font-size: var(--text-regular); line-height: 1.7; color: var(--color-slate); }
 .rich ul, .rich ol { margin: 0 0 16px; padding-left: 22px; }
+.rich ul:not([class]) { list-style: disc; }
+.rich ol:not([class]) { list-style: decimal; }
+.rich ul:not([class]) ul:not([class]) { list-style: circle; }
+.rich ol:not([class]) ol:not([class]) { list-style: lower-alpha; }
 .rich li { margin-bottom: 8px; font-size: var(--text-regular); line-height: 1.65; color: var(--color-slate); }
 .rich a { color: var(--color-hitiq-blue); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .rich a:hover { color: var(--color-green-active); }
