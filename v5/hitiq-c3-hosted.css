@@ -1031,8 +1031,8 @@ html.is-reduced .system_pulse { animation: none; left: 50%; opacity: 1; }
 .doc-hero_meta a:hover { color: var(--color-cyan); }
 .doc_help-text a { color: var(--color-hitiq-blue); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .rich p.doc_note { font-weight: 700; color: var(--color-hitiq-blue); }
-.rich .doc_section { padding-top: 8px; margin-bottom: clamp(28px, 3vw, 44px); scroll-margin-top: calc(var(--navbar-top) + var(--navbar-height) + 24px); }
-.rich .doc_section + .doc_section { border-top: 1px solid var(--color-grey-5); padding-top: clamp(24px, 3vw, 40px); }
+.rich .doc_section, .doc_body section { padding-top: 8px; margin-bottom: clamp(28px, 3vw, 44px); scroll-margin-top: calc(var(--navbar-top) + var(--navbar-height) + 24px); }
+.rich .doc_section + .doc_section, .doc_body section + section { border-top: 1px solid var(--color-grey-5); padding-top: clamp(24px, 3vw, 40px); }
 .rich h2, .rich .doc_h2 { margin: 0 0 16px; font-size: var(--text-h3); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
 .rich h3, .rich .doc_h3 { margin: 24px 0 8px; font-size: 18px; font-weight: 700; line-height: 1.3; }
 .rich p { margin: 0 0 14px; font-size: var(--text-regular); line-height: 1.7; color: var(--color-slate); }
